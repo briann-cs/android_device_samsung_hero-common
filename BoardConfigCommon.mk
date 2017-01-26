@@ -50,7 +50,7 @@ TARGET_UNIFIED_DEVICE := true
 BLOCK_BASED_OTA := false
 
 # Pre-Optimize DEX
-WITH_DEXPREOPT := true
+WITH_DEXPREOPT := false
 
 # Renderscript
 BOARD_OVERRIDE_RS_CPU_VARIANT_32 := cortex-a53.a57
