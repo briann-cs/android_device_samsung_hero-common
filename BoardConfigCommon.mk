@@ -47,7 +47,7 @@ TARGET_INIT_VENDOR_LIB := libinit_sec
 TARGET_UNIFIED_DEVICE := true
 
 # Packaging
-BLOCK_BASED_OTA := false
+BLOCK_BASED_OTA := true
 
 # Pre-Optimize DEX
 WITH_DEXPREOPT := false
