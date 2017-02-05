@@ -113,6 +113,7 @@
             64 - Volume rocker
          For example, a device with Home, Back and Menu keys would set this
          config to 7. -->
+    <add-resource type="integer" name="config_deviceHardwareKeys"></add-resource>    
     <integer name="config_deviceHardwareKeys">83</integer>
 
     <!-- Hardware keys present on the device with the ability to wake, stored as a bit field.
@@ -127,6 +128,7 @@
             64 - Volume rocker
          For example, a device with Home, Back and Menu keys would set this
          config to 7. -->
+    <add-resource type="integer" name="config_deviceHardwareWakeKeys"></add-resource> 
     <integer name="config_deviceHardwareWakeKeys">65</integer>
 
     <!-- Control the behavior when the user long presses the home button.
@@ -224,6 +226,7 @@
     <bool name="config_intrusiveBatteryLed">true</bool>
 
     <!-- Boolean to enable stk functionality on Samsung phones -->
+    <add-resource type="bool" name="config_samsung_stk"></add-resource>
     <bool name="config_samsung_stk">true</bool>
     
     <!-- Doze (Ambient display) -->
