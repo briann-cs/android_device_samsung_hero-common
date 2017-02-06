@@ -39,6 +39,7 @@ EXTENDED_FONT_FOOTPRINT := true
 # Image
 BOARD_KERNEL_PREBUILT_DT := true
 BOARD_KERNEL_SEPARATED_DT := true
+BOARD_CUSTOM_MKBOOTIMG := device/samsung/hero2lte/mkbootimg
 
 # Init
 TARGET_INIT_VENDOR_LIB := libinit_sec
