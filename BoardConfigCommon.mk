@@ -37,17 +37,16 @@ ENABLE_CPUSETS := true
 EXTENDED_FONT_FOOTPRINT := true
 
 # Image
+BOARD_CUSTOM_MKBOOTIMG := device/samsung/hero2lte/mkbootimg
 BOARD_KERNEL_SEPARATED_DT := true
-BOARD_CUSTOM_BOOTIMG := true
-BOARD_CUSTOM_BOOTIMG_MK := device/samsung/hero-common/mkbootimg.mk
-TARGET_CUSTOM_DTBTOOL := dtbToolExynos
+BOARD_MKBOOTIMG_ARGS := --kernel_offset 0x00008000 --ramdisk_offset 0x01000000 --tags_offset 0x00000100 --dt device/samsung/$(TARGET_DEVICE)/dt.img
 
 # Init
 TARGET_INIT_VENDOR_LIB := libinit_sec
 TARGET_UNIFIED_DEVICE := true
 
 # Packaging
-BLOCK_BASED_OTA := false
+BLOCK_BASED_OTA := true
 
 # Pre-Optimize DEX
 WITH_DEXPREOPT := true
